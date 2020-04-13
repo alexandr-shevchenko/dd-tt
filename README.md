@@ -1,4 +1,6 @@
-First you need to build and launch a container
+clone this repo, go to project folder `cd dd-tt/src` and run `composer install` 
+
+go back to root folder `cd ..` and build and launch a container
 ```
 docker-compose up -d --build
 ```
