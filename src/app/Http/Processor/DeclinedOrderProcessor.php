@@ -23,6 +23,6 @@ class DeclinedOrderProcessor implements OrderProcessorInterface
      */
     public function isSupportsOrder(Order $order): bool
     {
-        return $order->status === 'declined';
+        return $order->status === 'declined' || $order->status === 'fail';
     }
 }

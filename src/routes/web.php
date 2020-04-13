@@ -14,5 +14,15 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    $orders = DB::table('orders')->get();
+
+    return view('welcome', ['orders' => $orders]);
+});
+
+Route::get('/sorry', function () {
+    return view('sorry');
+});
+
+Route::get('/thank-you', function () {
+    return view('thank-you');
 });

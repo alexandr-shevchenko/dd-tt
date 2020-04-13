@@ -45,7 +45,7 @@ class ApiController extends Controller
     /**
      * @param Request $request
      */
-    public function callback(Request $request): void
+    public function callback(Request $request)
     {
         $orderData = $this->orderDataExtractor->extract($request->getContent());
 
