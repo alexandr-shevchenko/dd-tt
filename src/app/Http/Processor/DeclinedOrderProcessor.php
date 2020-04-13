@@ -13,6 +13,7 @@ class DeclinedOrderProcessor implements OrderProcessorInterface
      */
     public function process(Order $order): void
     {
+        $order->save();
     }
 
     /**
@@ -22,6 +23,6 @@ class DeclinedOrderProcessor implements OrderProcessorInterface
      */
     public function isSupportsOrder(Order $order): bool
     {
-        return $order->getStatus() === 'fail';
+        return $order->status === 'declined';
     }
 }

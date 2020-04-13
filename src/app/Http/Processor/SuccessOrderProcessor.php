@@ -14,7 +14,7 @@ class SuccessOrderProcessor implements OrderProcessorInterface
      */
     public function process(Order $order): void
     {
-        // TODO: Implement process() method.
+        $order->save();
     }
 
     /**
@@ -24,6 +24,6 @@ class SuccessOrderProcessor implements OrderProcessorInterface
      */
     public function isSupportsOrder(Order $order): bool
     {
-        return $order->getStatus() === 'success';
+        return $order->status === 'success';
     }
 }

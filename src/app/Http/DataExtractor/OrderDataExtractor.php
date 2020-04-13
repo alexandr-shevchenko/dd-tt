@@ -19,7 +19,7 @@ class OrderDataExtractor
         return new OrderData(
             $callbackData['order']['order_id'],
             (string) $callbackData['order']['amount'],
-            $callbackData['transaction']['status'],
+            $callbackData['order']['status'],
             $callbackData['error']['recommended_message_for_user'] ?? ''
         );
     }

@@ -6,7 +6,6 @@ namespace App\Http\ResourceBuilder;
 
 use App\Http\Model\OrderData;
 use App\Order;
-use Ramsey\Uuid\Uuid;
 
 class OrderBuilder
 {
@@ -16,10 +15,12 @@ class OrderBuilder
      */
     public function build(OrderData $orderData): Order
     {
-        return new Order(
-            $orderData->getAmount(),
-            $orderData->getStatus(),
-            Uuid::fromString($orderData->getOrderId())
-        );
+        //TODO: implement OrderRepository, OrderQueryHandler
+
+        $order = Order::find($orderData->getOrderId());
+        $order->status = $orderData->getStatus();
+        $order->amount = $orderData->getAmount();
+
+        return $order;
     }
 }

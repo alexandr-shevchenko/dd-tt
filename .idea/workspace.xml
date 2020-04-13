@@ -2,7 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f8bb6804-bdf3-429a-9ea7-437c46ba2f26" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/Http/Processor/DeclinedOrderProcessor.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/Http/Processor/DeclinedOrderProcessor.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/Http/Processor/SuccessOrderProcessor.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/Http/Processor/SuccessOrderProcessor.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/Http/ResourceBuilder/OrderBuilder.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/Http/ResourceBuilder/OrderBuilder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/Order.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/Order.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -90,7 +94,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1586637782541</updated>
-      <workItem from="1586637785562" duration="24225000" />
+      <workItem from="1586637785562" duration="26968000" />
     </task>
     <servers />
   </component>
@@ -120,10 +124,14 @@
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
     <state x="578" y="287" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1680.1050@0.0.1680.1050" timestamp="1586722898956" />
-    <state x="491" y="348" key="NewPhpClassDialog" timestamp="1586722653159">
+    <state x="491" y="348" key="NewPhpClassDialog" timestamp="1586755353055">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state x="491" y="348" key="NewPhpClassDialog/0.0.1680.1050@0.0.1680.1050" timestamp="1586722653159" />
+    <state x="491" y="348" key="NewPhpClassDialog/0.0.1680.1050@0.0.1680.1050" timestamp="1586755353055" />
+    <state x="597" y="243" key="RollbackChangesDialog" timestamp="1586757351568">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state x="597" y="243" key="RollbackChangesDialog/0.0.1680.1050@0.0.1680.1050" timestamp="1586757351568" />
     <state x="722" y="417" width="350" height="224" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1" timestamp="1586718391691">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
@@ -140,9 +148,9 @@
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
     <state x="495" y="282" width="689" height="486" key="find.popup/0.0.1680.1050@0.0.1680.1050" timestamp="1586727167493" />
-    <state x="505" y="233" width="670" height="676" key="search.everywhere.popup" timestamp="1586754569750">
+    <state x="505" y="233" width="670" height="676" key="search.everywhere.popup" timestamp="1586755169310">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state x="505" y="233" width="670" height="676" key="search.everywhere.popup/0.0.1680.1050@0.0.1680.1050" timestamp="1586754569750" />
+    <state x="505" y="233" width="670" height="676" key="search.everywhere.popup/0.0.1680.1050@0.0.1680.1050" timestamp="1586755169310" />
   </component>
 </project>
