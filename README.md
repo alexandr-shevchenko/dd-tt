@@ -1,36 +1,63 @@
-# docker-compose-laravel
-A pretty simplified docker-compose workflow that sets up a LEMP network of containers for local Laravel development. You can view the full article that inspired this repo [here](https://medium.com/@aschmelyun).
-
-
-## Usage
-
-To get started, make sure you have [Docker installed](https://docs.docker.com/docker-for-mac/install/) on your system, and then clone this repository.
-
-First add your entire Laravel project to the `src` folder, then open a terminal and from this cloned respository's root run `docker-compose up -d --build`. Open up your browser of choice to [http://localhost:8080](http://localhost:8080) and you should see your Laravel app running as intended. **Your Laravel app needs to be in the src directory first before bringing the containers up, otherwise the artisan container will not build, as it's missing the appropriate file.** 
-
-**New:** Three new containers have been added that handle Composer, NPM, and Artisan commands without having to have these platforms installed on your local computer. Use the following command templates from your project root, modifiying them to fit your particular use case:
-
-- `docker-compose run --rm composer update`
-- `docker-compose run --rm npm run dev`
-- `docker-compose run --rm artisan migrate` 
-
-Containers created and their ports (if used) are as follows:
-
-- **nginx** - `:8080`
-- **mysql** - `:3306`
-- **php** - `:9000`
-- **npm**
-- **composer**
-- **artisan**
-
-## Persistent MySQL Storage
-
-By default, whenever you bring down the docker-compose network, your MySQL data will be removed after the containers are destroyed. If you would like to have persistent data that remains after bringing containers down and back up, do the following:
-
-1. Create a `mysql` folder in the project root, alongside the `nginx` and `src` folders.
-2. Under the mysql service in your `docker-compose.yml` file, add the following lines:
-
+First you need to build and launch a container
 ```
-volumes:
-  - ./mysql:/var/lib/mysql
+docker-compose up -d --build
 ```
+Then enter to php-container
+```
+docker-compose exec php sh
+```
+Run migrations 
+```
+php artisan migrate
+```
+After that create test orders
+```
+php artisan db:seed
+```
+
+check in browser http://localhost:8080/
+
+Then you should to send from Postman post request at this url:
+http://localhost:8080/api/orders/
+
+example of the body:
+```
+{
+   "pay_form":{
+      "token":"xxx",
+      "design_name":"des1"
+   },
+   "error":{
+      "code":"6.01",
+      "messages":[
+         "Unknown decline code"
+      ],
+      "recommended_message_for_user":"Unknown decline code"
+   },
+   "order":{
+      "order_id":"6bedebc7-fb91-4972-930c-ad1244a4fe49",
+      "status":"declined",
+      "amount":2345,
+      "refunded_amount":0,
+      "currency":"USD",
+      "marketing_amount":2345,
+      "marketing_currency":"USD",
+      "processing_amount":2345,
+      "processing_currency":"USD",
+      "descriptor":"FAKE_PSP",
+      "fraudulent":false,
+      "total_fee_amount":0,
+      "fee_currency":"USD"
+   },
+   "transaction":{
+      "id":"10c6f87b-3479-44a3-8ac8-520bf02c8418",
+      "operation":"pay",
+      "status":"fail"
+   }
+}
+```
+
+You need to change order->order_id and order->status for correct testing.
+order_id should be from table from page http://localhost:8080/
+
+Status can be success, declined or fail
