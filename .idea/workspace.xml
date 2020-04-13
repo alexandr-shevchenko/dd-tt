@@ -2,24 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f8bb6804-bdf3-429a-9ea7-437c46ba2f26" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/app/Http/DataExtractor/OrderDataExtractor.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/Http/Model/OrderData.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/Http/Processor/DeclinedOrderProcessor.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/Http/Processor/OrderProcessorChain.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/Http/Processor/OrderProcessorInterface.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/Http/Processor/SuccessOrderProcessor.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/Http/Requests/OrderRequest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/Http/Resource/OrderResource.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/Http/ResourceBuilder/OrderBuilder.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/database/seeds/OrdersTableSeeder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/Http/Controllers/ApiController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/Http/Controllers/ApiController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/Order.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/Order.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/src/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/database/migrations/2020_04_12_133803_create_orders_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/database/migrations/2020_04_12_133803_create_orders_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/database/seeds/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/database/seeds/DatabaseSeeder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/api.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -107,7 +90,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1586637782541</updated>
-      <workItem from="1586637785562" duration="24010000" />
+      <workItem from="1586637785562" duration="24225000" />
     </task>
     <servers />
   </component>
